@@ -40,5 +40,5 @@ class Point_Generator():
         data = np.concatenate((inliers, outliers))
         np.random.shuffle(data)
 
-        # возвращаем x и y отдельно
+        # Возвращаем X и y отдельно
         return data.T[0].reshape(-1, 1), data.T[1].reshape(-1, 1)
